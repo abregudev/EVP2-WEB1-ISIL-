@@ -7,7 +7,7 @@ document.getElementById("getAPIpokemon").addEventListener("click", () => {
     fetch(URL + datoNumeroRamdom)
     .then((response) => response.json())
     .then(data => {
-        document.getElementById("pokemonStat").innerHTML = 
+        document.getElementById("pokemonSTATS").innerHTML = 
         `
         <p class="pokemon-id">#${datoNumeroRamdom}</p>
         <img class="imgPokemon" src="${data.sprites.front_default}"></img>
